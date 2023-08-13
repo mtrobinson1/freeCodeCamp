@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Demographic Survey</title>
+  <link rel="stylesheet" href="surveyform.css"/>
+ </head> 
+ <body class="container">
+  <h1 id="title">Mary's National CU</h1>
+  <p id="description">Please take this optional demographic survey.</p>
+  <form id="survey-form">
+    <div><label id="name-label">Name: <input id="name" type="text" placeholder="Princess Peach" required ></label>
+    </div>
+    <div><label id="email-label">Email: <input id="email" type="email" placeholder="peachespeachespeaches@gmail.com" required ></label>
+    </div>
+    <div><label id="number-label">Age: <input id="number" type="number" min="18" max="99" placeholder="21"></label>
+    </div>
+    <div><p>What is your marital status?</p>
+      <select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="S">Single</option>
+      <option value="M">Married</option>
+      <option value="DP">In a domestic partnership</option>
+      <option value="D">Divorced</option>
+      <option value="W">Widowed</option>
+      </select>
+    </div>
+    <div><p>How many people reside in your household?</p>
+      <select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5+</option>
+      </select>
+    </div>
+      <div><p>What is your highest level of education?</p> 
+        <label><input type="radio" name="education">Some High School </label>
+        <label><input type="radio" name="education">High School Diploma </label>
+        <label><input type="radio" name="education">Some College </label>
+        <label><input type="radio" name="education">College Degree </label>
+        <label><input type="radio" name="education">Graduate Degree </label>
+        <label><input type="radio" name="education">Other </label>
+      </div>
+    <div>  
+      <p>What is your household income?</p> 
+        <label><input type="radio" name="education">Under $30,000 </label>
+        <label><input type="radio" name="education">$31,000-$60,000 </label>
+        <label><input type="radio" name="education">$61,000-$90,000 </label>
+        <label><input type="radio" name="education">$91,000-$120,000 </label>
+        <label><input type="radio" name="education">$120,000+ </label>
+    </div>
+    <div><p>Which social media services do your use?(Select all that apply)</p>
+      <label><input value="1" type="checkbox">Facebook</label>
+      <label><input value="2" type="checkbox">Instagram</label>
+      <label><input value="3" type="checkbox">TikTok</label>
+      <label><input value="4" type="checkbox">Twitter</label>
+      <label><input value="4" type="checkbox">Other</label>
+    </div>
+    <div>
+      <label><p>Any additional comments?</p>
+        <textarea>Enter comments here...</textarea>
+      </label>
+    </div>
+    <div>
+      <button type="submit" id="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
